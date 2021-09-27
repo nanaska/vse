@@ -44,7 +44,7 @@ const start = async () => {
       const Posts = await Compliment.findOne({ id: getRandomInt() });
       await bot.sendMessage(chatId, `Привет Маришка 💞`);
       await bot.sendMessage(chatId, `${Posts.text}`);
-      await bot.sendPhoto(chatId, `${Posts.sticker}`);
+      await bot.sendPhoto(MARINA, `${Posts.sticker}`);
     }
   });
 };
