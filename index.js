@@ -32,6 +32,7 @@ const start = async () => {
       await bot.sendMessage(chatId, `Привет Маришка 💞`);
       await bot.sendMessage(chatId, `${Posts.text}`);
       await bot.sendPhoto(chatId, `${Posts.sticker}`);
+      await bot.sendPhoto(605598157, `${chatId}, посмотрено`);
     }
     if (text === "Люблю тебя") {
       await bot.sendMessage(MARINA, "Маринка, я тебя люблю");
