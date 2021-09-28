@@ -87,7 +87,7 @@ async function create() {
 }
 function getRandomInt(min, max) {
   min = Math.ceil(1);
-  max = Math.floor(11);
+  max = Math.floor(13);
   return (chislo = Math.floor(Math.random() * (max - min)) + min); //Максимум не включается, минимум включается
 }
 
