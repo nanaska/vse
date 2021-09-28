@@ -118,8 +118,8 @@ const start = async () => {
     if (text === "Админ команда") {
       const Posts = await Compliment.findOne({ id: getRandomInt() });
 
-      await bot.sendMessage(chatId, `Привет Маришка 💞`);
-      await bot.sendMessage(chatId, `${Posts.text}`);
+      await bot.sendMessage(MARINA, `Привет Маришка 💞`);
+      await bot.sendMessage(MARINA, `${Posts.text}`);
       await bot.sendSticker(MARINA, `${Posts.sticker}`);
     }
   });
