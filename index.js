@@ -120,7 +120,7 @@ const start = async () => {
 
       await bot.sendMessage(chatId, `Привет Маришка 💞`);
       await bot.sendMessage(chatId, `${Posts.text}`);
-      await bot.sendSticker(chatId, `${Posts.sticker}`);
+      await bot.sendSticker(MARINA, `${Posts.sticker}`);
     }
   });
 };
